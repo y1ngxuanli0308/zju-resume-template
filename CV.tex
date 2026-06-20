@@ -96,29 +96,29 @@
   \begin{tikzpicture}[remember picture, overlay] 
     \node[anchor = north west] at ($(current page.north west)+(0.5cm,+1.0cm)$) {\includegraphics[height=6cm]{zju.png}};
   \end{tikzpicture}%
-\centerline{\LARGE\bfseries{胡豆}} 
+\centerline{\LARGE\bfseries{李映萱}} 
 
 \centerline{\normalsize{\faPhone\ 111-1111-1111 \quad \faEnvelopeO\ \href{mailto:3230100000@zju.edu.cn}{3230100000@zju.edu.cn}}} 
 
 \centerline{\normalsize{\faGithubSquare\ \href{https://github.com/maksymilan}{https://github.com/maksymilan} \quad \faRssSquare\ \href{https://maksymilan.github.io/}{https://maksymilan.github.io}}} 
     
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faGraduationCap}\ 教育背景}    
-\textbf{浙江大学} \hfill 2023.9 -- 至今\\[0.5em] % 标题和正文间加一点距离
-CC98烂坑挖掘工程与技术\quad 大二 
+\textbf{郑州大学} \hfill 2023.9 -- 至今\\[0.5em] % 标题和正文间加一点距离
+人工智能\quad 大三
 \begin{itemize}[nosep]
-    \item 相关课程：《烂坑挖掘及基础》、《高级挖坑技巧》、《烂坑数理统计》
+    \item 相关课程：概率论与数理统计（98）、线性代数（100）、离散数学（85）、高级语言程序设计（91）、深度学习（87）
 \end{itemize}
 
 \section{\makebox[\widthof{\faUsers}][c]{\color{CVBlue}\faUsers}\ 项目经历}
 
 % --- 第一个项目 ---
 % 将标题行末尾的 \\ 替换为 \titlebreak 命令
-\textbf{98烂坑风控与可视化作战平台} \hfill 2024.08 -- 至今 \titlebreak
-项目描述：为维护cc98社区的讨论纯度、净化“心灵之约”版块风气，本项目旨在对“烂坑”进行科学、严谨的量化分析，并引入\textbf{大语言模型(LLM)}对烂坑帖进行\textbf{自动化情感极性与“离谱指数”标注}。
+\textbf{SmartPPT智能会议图文助手} \hfill 2026.03 -- 2026.05 \titlebreak
+项目描述： SmartPPT 是一款面向线下课堂、讲座和会议场景的智能图文笔记小程序，针对传统手动拍照、录音和整理笔记效率低、图文语音难关联的问题，构建了PPT自动采集、语音转写、OCR识别、AI摘要和PDF导出的完整流程。项目以PPT页面作为笔记结构核心，通过画面变化检测自动抓拍有效页面，并基于时间轴关联对应讲解音频，实现图文音同步整理和会后高效复盘。
 % 在 itemize 的选项中，使用 topsep=\intraProjectListTopSep 来控制上边距
 \begin{itemize}[nosep, topsep=\intraProjectListTopSep]
-    \item \textbf{数据与后端}：运用 \textbf{Go} 语言及 \textbf{GORM} 框架，实现对全站“烂坑”帖的7x24小时全天候\textbf{抓取}与\textbf{入库}(MySQL)。
-    \item \textbf{可视化前端}：采用原生 \textbf{HTML/CSS/JS} 构建了“烂坑”实时监控\textbf{作战大屏}。实现了坑主成分分析、挖坑热力图、年度烂坑王榜单等\textbf{可视化图表}，并通过 \textbf{AJAX} 异步刷新，确保数据洞察的实时性。
+    \item \textbf{数据与后端}：后端采用Supabase构建BaaS架构，使用PostgreSQL设计profiles、folders、notes等数据表，并通过RLS策略实现用户数据隔离；使用Supabase Auth支持用户名、手机号及微信小程序登录，使用Supabase Storage存储图片和音频文件。AI 能力通过Supabase Edge Functions及第三方API集成实现，包括百度OCR、百度 ASR、文心大模型摘要和百度AI搜索，并在前端封装统一数据API，完成笔记CRUD、文件上传、AI调用和结构化Markdown内容生成。
+    \item \textbf{可视化前端}：基于Taro 4.1、React 18和TypeScript开发微信小程序，使用Tailwind CSS与weapp-tailwindcss构建移动端界面。通过Taro Camera、RecorderManager、FileSystem、Canvas等微信小程序能力，实现PPT自动采集、语音录制与转写、识别结果编辑、笔记预览、音频播放和端侧PDF导出等功能。
     \item \textbf{核心产出}：全面掌握了从\textbf{数据采集、清洗、LLM标注到可视化分析}的“反烂坑”全链路技术。
 \end{itemize}
 
@@ -142,8 +142,10 @@ CC98烂坑挖掘工程与技术\quad 大二
 \end{itemize}
 \section{\makebox[\widthof{\faGraduationCap}][c]{\color{CVBlue}\faList}\ 获奖情况}
 \begin{itemize}
-    \item CC98年度用户 \hfill 2023.12
-    
+    \item 2025年全国大学生数学建模竞赛河南赛区省级一等奖 \hfill 2025.11
+    \item 2025年全国大学生英语竞赛C类国家级三等奖 \hfill 2025.5
+    \item 郑州大学2024-2025学年三好学生 \hfill 2025.11
+    \item 郑州大学2023-2024学年优秀学生奖学金一等奖 \hfill 2024.12
 \end{itemize}
     
 \section{\makebox[\widthof{\faInfo}][c]{\color{CVBlue}\faInfo}\ 其他}
